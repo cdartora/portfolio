@@ -1,0 +1,16 @@
+body {
+    background-color: #FFE8D6;
+    font-family: mukta, sans-serif;
+    font-size: 30px;
+}
+
+#profile-photo {
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 90%;
+    color: #6B705C;
+}
