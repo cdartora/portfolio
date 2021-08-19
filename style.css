@@ -4,13 +4,45 @@ body {
     font-size: 30px;
 }
 
-#profile-photo {
-    border-radius: 50%;
-}
-
 h1 {
     font-size: 3em;
     margin-bottom: 10px;
     line-height: 90%;
     color: #6B705C;
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+    text-align: left;
+}
+
+h3 {
+    font-weight: 200;
+    letter-spacing: -1;
+    line-height: 100%;
+    margin-top: 1px;
+    margin-left: 500px;
+    padding-top: 1px;
+    color: #A5A58D;
+    text-align: left;
+    font-size: 32px;
+}
+
+p,
+ul {
+    color: #CB997E;
+    line-height: 100%;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+}
+
+hr {
+    color: #6B705C;
+}
+
+.title {
+    display: inline-block;
+}
+
+#profile {
+    margin-left: 500px;
 }
