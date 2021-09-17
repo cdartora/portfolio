@@ -43,54 +43,96 @@ body {
 .main-container {
     background-color: white;
     position: absolute;
+    width: 100%;
+    height: 1150px;
     top: 500px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
 }
+
+/* about section */
 .container-about {
-    text-align: center;
-    margin-top: 100px;
-    height: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-around;
+}
+.img-text-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 #profile {
-    margin-right: 50px;
-    margin-top: 10px;
-    display: inline-block;
-    width: 180px;
-}
-#about-container {
-    display: inline-block;
-    width: 17%;
-    text-align: justify;
-    font-size: 1,5em;
-    font-family: 'Roboto Slab', 'serif';
-}
-#about-title {
-    text-align: center;
-    margin-top: 70px;
-    font-size: 3em;
-    font-family: 'Montserrat Alternates', sans-serif;
+    width: 250px;
 }
 #about-content {
-    display: block;
-    margin-top: 0;
-    top: 0;
+    text-align: justify;
+    width:400px;
+    margin-left: 30px;
+    font-family: 'Roboto Slab', 'serif';
+    font-size: 1.1em;
 }
-#skills-title {
-    text-align: center;
-    padding-top: 70px;
-    font-size: 3em;
+.sub-title {
+    margin-top: 40px;
+    font-size: 1.5em;
+    margin-bottom: 40px;
     font-family: 'Montserrat Alternates', sans-serif;
 }
-#skills-container {
-    background-color: rgba(250, 250, 244, 0.972);
-    height: 450px;
+
+/* projetos section */
+.projects-container {
+    margin-top: 100px;
+    background-color: #eeebe0;
+    height: 600px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
 }
-#skill-list-container {
+
+#projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-container {
+    margin: 20px;
+    padding: 5px 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.project-container:hover {
+    box-shadow: 0 0 20px #a8a28d;
+}
+
+.project-title {
     font-size: 1.3em;
-    font-family: 'Roboto Slab', 'serif';
-    text-align: center;
-    margin-top: 60px;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
-#skills-list {
-    list-style-type: none;
-    line-height: 35px;
+.project-description {
+    width: 200px;
+    font-family: 'Roboto Slab', 'serif';
+    font-size: 1em;
+}
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: none;
+}
+  
+a:active {
+    text-decoration: none;
 }
