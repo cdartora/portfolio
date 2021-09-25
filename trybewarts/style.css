@@ -1,16 +1,37 @@
 body {
   margin: 0;
+  font-family: 'Overlock', cursive;
 }
 
 .header {
   display: flex;
+  align-items: center;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
-  padding: 10px;
+  padding: 2px 20px;
+  height: 70px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: aliceblue;
+  font-size: 1.3vw;
 }
 
 .header img {
-  height: 90px;
+  height: 60px;
+}
+
+.header input {
+  margin: 0 6px;
+  border: 0 transparent;
+  border-radius: 7px;
+  height: 28px;
+  padding-left: 13px;
+}
+
+.header button {
+  height: 28px;
+  border: 0 transparent;
+  border-radius: 7px;
+  cursor: pointer;
 }
 
 .trybewarts-login {
