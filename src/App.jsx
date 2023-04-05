@@ -1,17 +1,25 @@
-import { useState } from "react";
 import "./App.css";
-import { BookmarkSimple } from "phosphor-react";
+
+import { GithubLogo, LinkedinLogo } from "phosphor-react";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="leading-relaxed text-red-300">Hello, world</h1>
-      <div className="flex">
-        <button onClick={() => setCount(count + 1)}>{count}</button>
-        <BookmarkSimple size={32} weight="fill" />
-      </div>
+    <div className="flex flex-col">
+      <section className="w-full max-w-7xl bg-amber-700">
+        <header className="flex items-center justify-between px-3">
+          <button>
+            <h1 className="logo leading-10 font-medium">{"<cdartora />"}</h1>
+          </button>
+          <div className="flex gap-2">
+            <button>
+              <GithubLogo size={35} />
+            </button>
+            <button>
+              <LinkedinLogo size={35} />
+            </button>
+          </div>
+        </header>
+      </section>
     </div>
   );
 }
