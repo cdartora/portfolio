@@ -2,7 +2,7 @@ import ContactForm from "./ContactForm";
 
 export default function ContatctMeSection() {
   return (
-    <div className="mt-20 flex justify-center w-full">
+    <div id="contact" className="mt-20 flex justify-center w-full mb-20">
       <section className="flex flex-col items-center projects text-center max-w-3xl px-4">
         <span className="hero-title text-3xl font-semibold text-slate-800 hover:underline hover:underline-offset-4 cursor-pointer px-2">
           Vamos Trabalhar Juntos?

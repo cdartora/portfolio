@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function ProjectSection() {
   return (
-    <div className="mt-36 flex justify-center w-full">
+    <div id="projects" className="mt-36 flex justify-center w-full">
       <section className="flex flex-col items-center projects text-center max-w-3xl">
         <span className="hero-title text-3xl font-semibold text-slate-800 hover:underline hover:underline-offset-4 cursor-pointer mb-10">
           Cada Projeto um Aprendizado Diferente

@@ -41,7 +41,7 @@
   animation: upDownAnimation 1s infinite;
 }
 
-.custom-shape-divider-top-1680746995 {
+.curve {
   position: absolute;
   bottom: -140px;
   left: 0;
@@ -51,7 +51,28 @@
   z-index: -1;
 }
 
-.custom-shape-divider-top-1680746995 > img {
+.curve-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.curve-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 40px;
+}
+
+.curve-top .shape-fill {
+  fill: #e6eaec;
+}
+
+.curve > img {
   width: 100%;
 }
 

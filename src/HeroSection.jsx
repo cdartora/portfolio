@@ -8,7 +8,10 @@ import shape from "./assets/curveAsymmetrical.svg";
 
 export default function HeroSection() {
   return (
-    <div className="flex justify-center relative bg-[#f8f8f8] text-slate-800">
+    <div
+      id="home"
+      className="flex justify-center relative bg-[#f8f8f8] text-slate-800"
+    >
       <section className="w-full max-w-3xl">
         <header className="flex items-center justify-between px-3 mb-10">
           <button>
@@ -16,7 +19,7 @@ export default function HeroSection() {
           </button>
           <div className="flex gap-2">
             <button className="monospace text-xs font-bold text-white bg-slate-800 px-2 rounded-full">
-              <a className="flex items-center" href="#contact-form">
+              <a className="flex items-center" href="#contact">
                 contato
               </a>
             </button>
@@ -89,7 +92,7 @@ export default function HeroSection() {
           </div>
         </div>
       </section>
-      <div className="custom-shape-divider-top-1680746995">
+      <div className="curve">
         <img src={shape} alt="" />
       </div>
     </div>
