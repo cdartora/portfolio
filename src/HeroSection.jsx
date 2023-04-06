@@ -51,8 +51,13 @@ export default function HeroSection() {
             </div>
             <div className="text-xl font-bold">
               <Typewriter
+                options={{ loop: true, autoStart: true }}
                 onInit={(typewriter) => {
-                  typewriter.typeString("React.").pauseFor(2500).start();
+                  typewriter
+                    .typeString("React.")
+                    .pauseFor(2500)
+                    .deleteAll()
+                    .start();
                 }}
               />
             </div>
@@ -79,7 +84,7 @@ export default function HeroSection() {
           </div>
         </div>
       </section>
-      <div class="custom-shape-divider-top-1680746995">
+      <div className="custom-shape-divider-top-1680746995">
         <img src={shape} alt="" />
       </div>
     </div>
