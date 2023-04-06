@@ -15,6 +15,11 @@ export default function HeroSection() {
             <h1 className="logo leading-10 font-medium">{"<cdartora />"}</h1>
           </button>
           <div className="flex gap-2">
+            <button className="monospace text-xs font-bold text-white bg-slate-800 px-2 rounded-full">
+              <a className="flex items-center" href="#contact-form">
+                contato
+              </a>
+            </button>
             <button>
               <a href="https://github.com/cdartora" target="_blank">
                 <GithubLogo size={35} />

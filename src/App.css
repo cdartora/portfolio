@@ -54,3 +54,7 @@
 .custom-shape-divider-top-1680746995 > img {
   width: 100%;
 }
+
+.monospace {
+  font-family: "Roboto Mono", monospace;
+}
