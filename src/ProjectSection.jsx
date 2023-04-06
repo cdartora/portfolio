@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import { projects } from "./data/projects";
 
 export default function ProjectSection() {
   return (
@@ -8,12 +9,18 @@ export default function ProjectSection() {
           Cada Projeto um Aprendizado Diferente
         </span>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-5">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {projects.map(
+            ({ title, ghLink, isDemoClickable, demoLink, text, thumbnail }) => (
+              <ProjectCard
+                title={title}
+                ghLink={ghLink}
+                isDemoClickable={isDemoClickable}
+                demoLink={demoLink}
+                text={text}
+                thumbnail={thumbnail}
+              />
+            )
+          )}
         </div>
       </section>
     </div>

@@ -7,21 +7,6 @@ import {
 } from "phosphor-react";
 
 export default function FooterSection() {
-  const onButtonClick = () => {
-    // using Java Script method to get PDF file
-    fetch("curriculum.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "curriculum.pdf";
-        alink.click();
-      });
-    });
-  };
-
   return (
     <div className="flex justify-center relative bg-[#f8f8f8] text-slate-800">
       <div className="curve-top">
@@ -54,10 +39,14 @@ export default function FooterSection() {
                 <Files size={30} weight="bold" />
                 <button
                   type="button"
-                  onClick={onButtonClick}
                   className="flex items-center gap-1 hover:text-gray-950"
                 >
-                  <span>currículo</span>
+                  <a
+                    href="https://docs.google.com/document/d/1Ppt6AHJSOEzcU8M30ftV3oNEDdqKEHrer_RANrGV4AQ/edit?usp=sharing"
+                    target="_blank"
+                  >
+                    currículo
+                  </a>
                   <ArrowSquareOut size={20} weight="bold" />
                 </button>
               </div>
