@@ -30,13 +30,13 @@ export default function ProjectCard({
         </span>
         <div className="flex items-center gap-2">
           <button>
-            <a href={ghLink}>
+            <a href={ghLink} target="_blank">
               <GitBranch size={25} weight="bold" />
             </a>
           </button>
           {isDemoClickable && (
             <button>
-              <a href={demoLink}>
+              <a href={demoLink} target="_blank" rel="norefferer">
                 <ArrowSquareIn size={25} weight="bold" />
               </a>
             </button>
